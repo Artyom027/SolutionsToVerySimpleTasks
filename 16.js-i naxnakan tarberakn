@@ -1,0 +1,39 @@
+function triangleArea(arr = [a,b,c])
+{
+    a = [2];
+    b = [2];
+    c = [2];
+    
+    if(arr[a[1]] < 2)
+    arr[a[1]] = 0;
+
+    if(arr[b[1]] < 2)
+    arr[b[1]] = 0;
+
+    if(arr[c[1]] < 2)
+    arr[c[1]] = 0;
+
+    let A = '';
+    A = arr[a[0]] + '' + arr[a[1]];
+    A =  A / 10;
+
+    let B = '';
+    B = arr[b[0]] + '' + arr[b[1]];
+    B = B / 10;
+
+    let C = '';
+    C = arr[c[0]] + '' + arr[c[1]];
+    C = C / 10;
+    
+    let S;
+
+    //havasarakoxm erankyun
+    
+    if (A == B && A == C)
+    {
+        S = ((A * A + B * B + C * C) / (4 * Math.sqrt(3)));
+        console.log("erankyann havasarkoxm e ev erankyan S = " + S);
+    }
+
+}
+triangleArea([[5,0],[5,0],[5,0]]);
