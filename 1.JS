@@ -1,11 +1,6 @@
-function isEven(i) 
+function isEven(x)
 {
+    return x % 2 === 0;
     
-    if(i % 2 ==0 )
-    {
-        console.log(true);
-    }
-    else{
-        console.log(false)
-    }
-}
+};
+ console.log(isEven(5));
