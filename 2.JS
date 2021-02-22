@@ -1,10 +1,5 @@
-function  isOdd(i)
+ffunction  isOdd(i)
  {
-    if(j > 100 && (j % 2 != 0 ))
-    {
-     console.log(true);
-    }
-    else{
-        console.log(false)}
-
+    return (i > 100 && i % 2 !== 0);
  }
+ console.log(isOdd(11));
