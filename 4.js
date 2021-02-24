@@ -1,7 +1,19 @@
-function canBeATriangle(a,b,c)
+function getLongest(arr = [])
 {
-  if(a+b>=c && a+c>=b && b+c>=a)
-  console.log(true)
-
-  else console.log(false)
+  let i = 0;
+  let long = 0;
+  let longStr;
+  
+  while(i < arr.length)
+  {
+    if(arr[i].length > long)
+    {
+      long = arr[i].length;
+      longStr = arr[i];
+    }
+    i++;
+  }
+  console.log(longStr);
 }
+
+getLongest([]);
