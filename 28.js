@@ -7,8 +7,8 @@ function isPowerOfTwo(numb)
         numb /= 2;
         
     }
-    return numb === 1;
+    console.log( numb === 1);
+    
    } 
 }
-
-console.log(isPowerOfTwo());
+isPowerOfTwo();
